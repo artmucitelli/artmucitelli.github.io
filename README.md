@@ -1,2 +1,0 @@
-# artmucitelli.github.io
-Portfolio
