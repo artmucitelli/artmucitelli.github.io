@@ -11,6 +11,21 @@
 <style>
 * {margin: 0;padding: 0;}	
 html, body {font-family: 'Permanent Marker';height: 100%;}
+	/*Attempt to response*/
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .main {height: 1800px;width: 100%;background-image: url("angel-official.jpeg");background-size: 1350px 1800px;
 			background-repeat: no-repeat;margin-top: -25px;}
 .main-content {text-align: center;margin-top: ;color: white;position: absolute;top: 1050px;left: 30%;}
