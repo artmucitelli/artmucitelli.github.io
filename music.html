@@ -4,29 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="styles/style-brp-head.css">
-<link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/
 		css/font-awesome.min.css">
-<title>Homepage</title>
+<title>Music</title>
 <style>
-* {margin: 0;padding: 0;}	
-html, body {font-family: 'Permanent Marker';height: 100%;}
-.main {height: 1800px;width: 100%;background-image: url("angel-official.jpeg");background-size: 1350px 1800px;
-			background-repeat: no-repeat;margin-top: -25px;}
-.main-content {text-align: center;margin-top: ;color: white;position: absolute;top: 1050px;left: 30%;}
-.main2 {height: 800px;width: 100%;background-image: url("7642.jpg");background-size: 1350px 800px;
-				background-repeat: no-repeat;margin-top: -20px;}
-.main2-content {text-align: center;color: white;position: absolute;left: 35%;}
-.main3 {height: 800px;width: 100%;background-image: url("concert.jpg");background-size: 1350px 800px;
-				background-repeat: no-repeat;margin-top: -25px;}
-.main3-content {text-align: center;color: white;position: absolute;left: 40%;}
-button {font-family: 'Permanent Marker';background-color: midnightblue;border: none;color: black;padding: 15px 32px;text-align: center;
-		text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;}
-a:link {text-decoration: none;}
-a:visited {color: white;}
-a:hover {color: green;}
-a:active {color: black;}
-.footer {position: relative;top: ;height: 300px;width: 100%;background-color: black;color: white;}
+* {margin: 0;padding:0;}	
+hml, body {font-family: 'Permanent Marker';height: 100%}
+.container {min-height: 100%;}
+#music {overflow: auto;padding-bottom: 800px;}
+iframe {margin-left: 200px;}
+.footer {position: relative;margin-top: -100;height: 300px;width: 100%;background-color: black;color: white;}
 .footer1 {display: inline-block;height: 37px;width: 32%;background-color: black;color: white;}
 .footer2 {display: inline-block;height: 37px;width: 32%;background-color: black;color: white;}
 .footer3 {display: inline-block;height: 37px;width: 32%;background-color: black;color: white;}
@@ -48,25 +36,15 @@ a:active {color: black;}
 		<li><a href="contact.html">Contact Us</a></li>
 	</ul>
 </div>
-<div class="main">
-	<div class="main-content">
-		<h2>The Official Release of The Angel Project</h2>
-		<p>Order it now on iTunes</p>
-	<button><a href="buy.html">Download It</a></button>
+<div class="container">
+	<div id="music">
+<h1></h1>
+<iframe src="https://onedrive.live.com/embed?cid=2557393A30790AB1&resid=
+2557393A30790AB1%21210&authkey=AKb_AHPGjwnlqME" 
+width="1000" height="600" frameborder="0" scrolling="no" 
+allowfullscreen></iframe>
 </div>
 </div>
-<div class="main2">
-	<div class="main2-content">
-		<h2>Listen to the latest release, Angel </h2>
-		<p></p>
-		<button><a href="music.html">Listen Now</a></button>
-	</div>
-</div>
-<div class="main3">
-	<div class="main3-content">
-		<h2>Latest news from Brent</h2>
-	</div>
-</div>	
 <div class="footer">
 	<div class="footer1">
 		<h3>Site Menu</h3>
@@ -93,8 +71,10 @@ a:active {color: black;}
 </div>
 <script>
 window.onscroll = function() {myFunction()};
+
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
+
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     header.classList.add("sticky");
@@ -102,7 +82,6 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
-var myButton = getElementById("myButton")
 </script>
 </body>
 </html>
