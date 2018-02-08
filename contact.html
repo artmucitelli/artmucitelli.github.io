@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1050px, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles/style-brp-head.css">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/
+		css/font-awesome.min.css">
+<title>Contact Us</title>
+<style>
+* {margin: 0;padding: 0;}
+html, body {font-family: 'Permanent Marker';height: 100%;}
+.container {min-height: 100%;}
+#contact {overflow: auto;padding-bottom: 800px;}
+form {margin-left: 15%;margin-top: 120px;color: white;font-size: 36px;}
+input[type=text] {width: 80%;padding: 12px 20px;margin 8px 0;box-sizing: border-box;border: 1px solid #555
+		outline: none;}
+textarea {width: 80%;padding: 12px 20px;margin 8px 0;box-sizing: border-box;border: 1px solid #555
+		outline: none;color: white;}
+input[type=submit] {font-family: 'Permanent Marker';background-color: midnightblue;border: none;color: black;padding: 15px 32px;text-align: center;
+		text-decoration: none;display: inline-block;font-size: 16px;margin: 14px 2px;cursor: pointer;}
+input[type=submit]:link {text-decoration: none;}
+input[type=submit]:visited {color: white;}
+input[type=submit]:hover {color: green;}
+input[type=submit]:active {color: black;}
+.footer {position: relative;margin-top: -80px;clear: both;height: 300px;width: 100%;background-color: black;color: white;}
+.footer1 {display: inline-block;height: 37px;width: 32%;background-color: black;color: white;}
+.footer2 {display: inline-block;height: 37px;width: 32%;background-color: black;color: white;}
+.footer3 {display: inline-block;height: 47px;width: 32%;background-color: black;color: white;}
+a:link {text-decoration: none;}
+a:visited {color: white;}
+a:hover {color: green;}
+a:active {color: black;}
+.fa {padding: 20px;font-size: 30px;width: 20px;text-algn: center:text-decoration:none;
+	margin: 10px 2px;}
+.fa:hover {opacity: 0.7;}
+.fa-facebook {background: #3B5998;color: white;}
+.fa-twitter {background: #55ACEE;color: white;}
+.fa-instagram {background: #125688;color: white;}
+</style>
+</head>
+<body>
+ <div class="header" id="myHeader">
+	<h1>Brent Roach Project</h1>
+	 <ul class="topnav">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="music.html">Music</a></li>
+		<li><a href="news.html">News and Events</a></li>
+		<li><a href="buy.html">Download It Now</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+	</ul>
+</div>
+<div class="container">
+	<div id="contact-form">
+	<form action="/action_page.php">
+		First Name:<br>
+		<input type="text" name="firstname" value="First Name"><br>
+		Email Address:<br>
+		<input type="text" name="email" value="Email Address"><br><br><br>
+		Comments:<br>
+		<textarea name="comments" rows="10" cols="30">
+		</textarea>
+		<br>
+		Submit<br>
+		<input type="submit" value="Submit">
+	</form>
+	</div>
+</div>
+<div class="footer">
+	<div class="footer1">
+		<h3>Site Menu</h3>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="music.html">Music</a></li>
+			<li><a href="news.html">News and Events</a></li>
+			<li><a href="buy.html">Downloads</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<div class="footer2">
+		<h3>Contact for gigs and info</h3>
+		<p>Brent <a href="mailto:broach14@hotmail.com?Subject=Subscribe%20Email" target="_top">broach14@hotmail.com</a></p><br>
+		<p>Marcello <a href="mailto:marcello@marcellomusic.com?Subject=Info%20on%20Brent%20Roach" target="_top"> marcello@marcellomusic.com</a></p>
+	</div>
+	<div class="footer3">
+		<h3>Connect with Brent</h3>
+		<a href="https://www.facebook.com/Brent-Roach-Project-484640488604048/" class="fa fa-facebook"></a>
+		<a href="https://twitter.com/roachman1414" class="fa fa-twitter"></a>
+		<a href="http://instagram.com/brent.roach" class="fa fa-instagram"></a>
+		<h3>Enter your email for updates</h3>
+		<h4>Web page built by <a href="mailto:artmdesigns@outlook.com?Subject=Info%20on%20Brent%20Roach" target="_top"> Art M designs</a> 2018</h4>
+	</div>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html
